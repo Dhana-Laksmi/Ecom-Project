@@ -27,15 +27,11 @@ export const ProductDetail = () => {
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
             <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
               <img
-                className="w-full dark:hidden"
+                className="w-full"
                 src={productDetails?.thumbnail}
                 alt=""
               />
-              <img
-                className="w-full hidden dark:block"
-                src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
-                alt=""
-              />
+      
             </div>
             <div className="mt-6 sm:mt-8 lg:mt-0">
               <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">

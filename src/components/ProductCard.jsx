@@ -8,7 +8,7 @@ export const ProductCard = (props) => {
     <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
       <div className="h-56 w-full">
         <a href="#">
-          <img src={image} alt="" />
+          <img src={image} alt="thumbnail" />
         </a>
       </div>
       <div className="pt-6">

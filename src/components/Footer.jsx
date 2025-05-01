@@ -1,4 +1,18 @@
-export const Footer = () => (
+import { useContext } from "react";
+import UserStore from "../store/UserStore";
+
+const Footer = () => {
+    const data=useContext(UserStore); 
+    console.log("data",data);
+    // return (
+    //     <div className="footer">
+    //         <h1>Footer</h1>
+    //         <p>{data.userName}</p>
+    //     </div>
+    // )
+
+
+  return(
     <footer className="bg-white antialiased dark:bg-gray-800">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
         <div className="border-b border-gray-100 py-6 dark:border-gray-700 md:py-8 lg:py-16">
@@ -296,19 +310,11 @@ export const Footer = () => (
         </div>
         <div className="py-6 md:py-8">
           <div className="gap-4 space-y-5 xl:flex xl:items-center xl:justify-between xl:space-y-0">
-            <a href="#" title="" className="block">
-              <img
-                className="block h-8 w-auto dark:hidden"
-                src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/logo-full.svg"
-                alt=""
-              />
-              <img
-                className="hidden h-8 w-auto dark:block"
-                src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/logo-full-dark.svg"
-                alt=""
-              />
-            </a>
+              
             <ul className="flex flex-wrap items-center gap-4 text-sm text-gray-900 dark:text-white xl:justify-center">
+              <li>
+              {data.userName}              </li>
+              
               <li>
                 <a href="#" title="" className="font-medium hover:underline">
                   {" "}
@@ -346,4 +352,5 @@ export const Footer = () => (
       </div>
     </footer>
   )
+}
 export default Footer;  

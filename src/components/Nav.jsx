@@ -31,13 +31,12 @@ export const Nav = () => (
                 </Link>
               </li>
               <li className="shrink-0">
-                <a
-                  href="#"
-                  title=""
+                <Link
+                  to="/bestSellers"
                   className="flex text-sm font-medium text-gray-900 hover:text-primary-700 dark:text-white dark:hover:text-primary-500"
                 >
                   Best Sellers
-                </a>
+                </Link>
               </li>
               <li className="shrink-0">
                 <a
@@ -514,12 +513,12 @@ export const Nav = () => (
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/bestSellers"
                 className="hover:text-primary-700 dark:hover:text-primary-500"
               >
                 Best Sellers
-              </a>
+              </Link>
             </li>
             <li>
               <a
